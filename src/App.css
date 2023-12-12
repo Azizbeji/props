@@ -2,37 +2,36 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes liveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-image: url('https://metro.co.uk/wp-content/uploads/2023/07/erling-haaland-ea-sports-fc-d058.jpg?quality=90&strip=all');
+  background-size: cover;
+  animation: liveBackground 10s linear infinite;
+}
+.img{
+  width: 100px;
+  justify-items: left;
+  border: 1px white solid;
+  border-radius: 13px;
+  position: fixed;
+  left: 0;
+}
+.ea{
   color: white;
+  font-size: 70px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: capitalize;
+  
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav{
+  display: flex;
+  justify-content: space-around;
 }
